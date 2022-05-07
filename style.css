@@ -1,8 +1,9 @@
-
+/* CSS background animado */
 .animated-background {
-    background: linear-gradient(to right, #833ab4,
+    background: linear-gradient(
+    to right, #833ab4,
     #fd1d1d, #fcb045);
-    background-size: 50% 50%;
+    background-size: 400% 400%;
     animation: animate-background 10s infinite ease-in-out;
 }
 
@@ -17,3 +18,38 @@
          background-position: 0 50%;
      }
 }
+
+
+/* CSS botão animado */
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+.button {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 30px;
+    padding: 20px 50px;
+    border: 2px solid white;
+    border-radius: 10px;
+    }
+
+    .button:hover {
+        animation: pulsate 1s ease-in-out;
+    }
+
+    @keyframes pulsate {
+        0%{
+            box-shadow: 
+            0 0 25px #5ddcff,
+            0 0 50px white;
+        }
+    }
+
+    /* fim CSS botão animado */
